@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <script src="https://kit.fontawesome.com/f8ce982619.js" crossorigin="anonymous">
+   </script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Press+Start+2P&family=Roboto+Condensed&family=Roboto:wght@300&family=Space+Mono&display=swap" rel="stylesheet">
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,600italic,400italic,800,700' rel='stylesheet' type='text/css'>    
+   <link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+   <link class="title-logo" rel="icon" href="Asset/Logo/DC-logo.png" />
+   <title>Delta Computer</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
+      }
+      body {
+        font-family: 'Roboto', sans-serif;
+        height: 5000px;
+        width: 100%;
+        margin: 0;
+      }
+      h1 {
+        margin: 0;
+        padding: 0;
+      }
+      h2{
+        margin: 0;
+        padding: 0;
+      }
+      /* header atas */
+
+      .header-atas {
+        width: 100%;
+        height: 80px;
+        background-color: rgb(0, 0, 0);
+        opacity: 80%;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        color: white;
+        z-index: 999;
+        box-shadow: 0 0 10px grey;
+      }
+      .header-atas-nama-web {
+        display: flex;
+      }
+      .header-atas-nama-web a {
+        font-family: 'Open Sans', sans-serif;
+        width: 1200px;
+        font-weight: 800;
+        text-shadow: rgb(3, 3, 3) 0px 2px 5px;
+        display: flex;
+        margin-left: 20px;
+        text-decoration: none;
+        color: white;
+        align-items: center;
+        font-size: 36px;
+      }
+      .header-atas-nama-web a span{
+        color:blue;
+      }
+      .header-atas-home {
+        font-size: 20px;
+        display: flex;
+        text-align: right;
+        align-items: center;
+        cursor: pointer;
+      }
+      .header-atas-home:hover {
+        background-color: rgb(43, 43, 43);
+      }
+      .header-atas-home a {
+        padding: 25px 25px 25px 25px;
+        text-decoration: none;
+        color: white;
+      }
+      .header-atas-tentang-kami {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .header-atas-tentang-kami:hover{
+        background-color: rgb(43, 43, 43);
+      }
+      .header-atas-tentang-kami a {
+        padding: 25px 25px 25px 25px;
+        text-decoration: none;
+        color: white;
+      }
+      .header-atas-layanan {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .header-atas-layanan:hover{
+        background-color: rgb(43, 43, 43);
+      }
+      .header-atas-layanan a {
+        padding: 25px 25px 25px 25px;
+        text-decoration: none;
+        color: white;
+      }
+      .header-atas-kontak {
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+      }
+      .header-atas-kontak:hover{
+        background-color: rgb(43, 43, 43);
+      }
+      .header-atas-kontak a {
+        padding: 25px 25px 25px 25px;
+        text-decoration: none;
+        color: white;
+      }
+      /* container atas*/
+
+      .container-atas {
+        background-image: url("Asset/Img/");
+        background-size: cover;
+        position: relative;
+      }
+      .container-atas h1{ 
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 50px;
+      }
+      .container-atas h2{
+        text-align: center;
+        font-size: 30px;
+      }
+      .container-atas p{
+        color: white;
+        text-align: center;
+        font-size: 20px;
+      }
+      .container-dalam {
+        margin: 200px 50px 0px 50px;
+        height: 300px;
+        width: 100%;
+        position: static;
+        z-index: 2;
+        position: absolute;
+      }
+      .container-dalam h1 {
+        z-index: 2;
+        
+      }
+      .container-dalam-teks{
+       background-color: rgb(0,0,0); 
+       background-color: rgba(0,0,0, 0.4); 
+       font-weight: 500;
+       border: 3px solid #f1f1f1;
+       position: absolute;
+       top: 50%;
+       left: 50%;
+       transform: translate(-50%, -50%);
+       z-index: 2;
+       width: 80%;
+       padding: 20px;
+       text-align: center;
+      }
+      .background-atas {
+        z-index: 0;
+        background-image: url("Asset/Img/commercial-printing-01.jpg");
+        filter: blur(5px);
+        -webkit-filter: blur(5px);
+        height: 1000px;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+      }
+      .sekat {
+        background-color: #e0dfdd;
+        width: 100%;
+        height: 40px;
+        z-index: 2;
+        position: absolute;
+        display: block;
+      }
+
+      /*container-tengah*/
+
+      .container-tengah{
+        position: relative;
+        width: 100%;
+        margin-top: 40px;
+        height: 700px;
+      }
+      .container-tengah h1 {
+        margin-top: 100px;
+        text-align: center;
+      }
+      .container-tengah p{
+        text-align: center;
+        font-size: 25px;
+      }
+      .container-tengah-kedua{
+        padding-top: 80px;
+        position: relative;
+        width: 100%;
+        background: rgb(241, 241, 241);
+        height: 2000px;
+      }
+      .judul-layanan h1{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 50px;
+        font-weight: 700;
+      }
+      .container-layanan p{ 
+        text-align: center;
+      }
+      .container-layanan{
+        margin-top: 60px;
+        margin-left: 100px;
+        margin-right: 100px;
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        gap: 60px;
+        width: 100%;
+        height: 1000px;
+      }
+      .layanan{
+        z-index: 10;
+        height: 100%;
+        border-width: 2px;
+        border-style: solid;
+        width: 100%;
+        margin-bottom: 40px;
+        background: #fff;
+        border: 2px solid #fff;
+        border-radius: 8px;
+        box-shadow: 0 15px 30px rgba(102, 113, 228, 0.13);
+        text-align: center;
+      }
+      .icon-layanan{
+        font-size: 40px;
+        margin: 20px auto;
+        padding: 40px;
+        height: 120px;
+        width: 120px;
+        background: #f4f5f8;
+        border-radius: 50%;
+      }
+      .deskripsi-layanan p:nth-child(1){
+        font-size: 20px;
+        font-weight: 700;
+        padding-bottom: 10px;
+      }
+      .deskripsi-layanan p:nth-child(2){
+        font-size: 14px;
+        font-weight: 400;
+        padding: 0 10px 20px 10px;
+        color: #748182;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-atas">
+        <div class="header-atas-nama-web">
+          <a href="#"><span>DEL</span>TA<span>COM</span>PUTER</a>
+        </div>
+        <div class="header-atas-home">
+          <a href="#">Home</a>
+        </div>
+        <div class="header-atas-tentang-kami">
+          <a href="#">Tentang kami</a>
+        </div>
+        <div class="header-atas-layanan">
+          <a href="#"> Layanan</a>
+        </div>
+        <div class="header-atas-kontak">
+          <a href="#"> Kontak</a>
+        </div>
+      </div>
+      <div class="container-atas">
+        <div class="container-dalam">
+          <div class="container-dalam-teks">
+            <h1><span>Del</span>ta <span>Com</span>puter</h1>
+            <br>
+            <p>Siap melayani segala jenis keperluan anda</p>
+            <br>
+            <p>Buka:</p>
+            <br>  
+            <p>Hari Senin-Sabtu Jam 15.00-22.00</p>
+            <br>
+            <p>Hari Minggu dan Hari Libur 08.00-22.00</p>
+          </div>
+        </div>
+        <div class="background-atas"></div>
+        <div class="sekat"></div>
+      </div>
+      <div class="container-tengah">
+        <h1>Tentang Kami</h1>
+        <br>
+        <p>Delta Computer sudah berdiri sejak 2001</p>
+        <br>
+        <p>Berpengalaman selama 21 tahun dalam melayani jasa print dan percetakan <br> mulai sejak menggunakan windows XP dan Microsoft Word 2002 <br>hingga sekarang menggunakan windows 10
+        dan alternatif dari microsoft word yaitu WPS Office</p>
+        <br>
+        <p>Delta Computer dulunya hanya melayani Rental Computer, Print, dan Percetakan</p>
+        <br>
+        <p>Namun sekarang berkembang dari tahun ke tahun menjadi melayani mulai dari Fotocopy, Laminating, Scan. <br> Hingga BRI-Link, Top Up Dompet Digital, dan Bayar Tagihan.</p>
+        <br>
+        <p>Delta Computer juga menjual segala kebutuhan anda mulai dari alat tulis sekolah dan kantor, Aksesoris HP dan Laptop</p>
+      </div>
+      <div class="sekat"></div>
+      <div class="container-tengah-kedua">
+        <div class="judul-layanan">
+          <h1>Layanan</h1>
+        </div>
+        <div class="container-layanan">
+          <div class="layanan">
+            <div class="icon-layanan">
+              <i class="fa-solid fa-print"></i>
+            </div>
+            <div class="deskripsi-layanan">
+              <p>Print</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolorum natus rerum nihil sequi error quidem cum harum, a ab, 
+                assumenda atque ducimus iste voluptates totam blanditiis at. 
+                Cumque eos fuga, doloribus dignissimos 
+                accusantium nisi impedit, veniam itaque mollitia ipsam corporis!
+              </p>
+            </div>
+          </div>
+          <div class="layanan">
+            <div class="icon-layanan">
+              <i class="fa-solid fa-print"></i>
+            </div>
+            <div class="deskripsi-layanan">
+              <p>Print</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolorum natus rerum nihil sequi error quidem cum harum, a ab, 
+                assumenda atque ducimus iste voluptates totam blanditiis at. 
+                Cumque eos fuga, doloribus dignissimos 
+                accusantium nisi impedit, veniam itaque mollitia ipsam corporis!
+              </p>
+            </div>
+          </div>
+          <div class="layanan">
+            <div class="icon-layanan">
+              <i class="fa-solid fa-print"></i>
+            </div>
+            <div class="deskripsi-layanan">
+              <p>Print</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolorum natus rerum nihil sequi error quidem cum harum, a ab, 
+                assumenda atque ducimus iste voluptates totam blanditiis at. 
+                Cumque eos fuga, doloribus dignissimos 
+                accusantium nisi impedit, veniam itaque mollitia ipsam corporis!
+              </p>
+            </div>
+          </div>
+          <div class="layanan">
+            <div class="icon-layanan">
+              <i class="fa-solid fa-print"></i>
+            </div>
+            <div class="deskripsi-layanan">
+              <p>Print</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolorum natus rerum nihil sequi error quidem cum harum, a ab, 
+                assumenda atque ducimus iste voluptates totam blanditiis at. 
+                Cumque eos fuga, doloribus dignissimos 
+                accusantium nisi impedit, veniam itaque mollitia ipsam corporis!
+              </p>
+            </div>
+          </div>
+          <div class="layanan">
+            <div class="icon-layanan">
+              <i class="fa-solid fa-print"></i>
+            </div>
+            <div class="deskripsi-layanan">
+              <p>Print</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolorum natus rerum nihil sequi error quidem cum harum, a ab, 
+                assumenda atque ducimus iste voluptates totam blanditiis at. 
+                Cumque eos fuga, doloribus dignissimos 
+                accusantium nisi impedit, veniam itaque mollitia ipsam corporis!
+              </p>
+            </div>
+          </div>
+          <div class="layanan">
+            <div class="icon-layanan">
+              <i class="fa-solid fa-print"></i>
+            </div>
+            <div class="deskripsi-layanan">
+              <p>Print</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolorum natus rerum nihil sequi error quidem cum harum, a ab, 
+                assumenda atque ducimus iste voluptates totam blanditiis at. 
+                Cumque eos fuga, doloribus dignissimos 
+                accusantium nisi impedit, veniam itaque mollitia ipsam corporis!
+              </p>
+            </div>
+          </div>
+          <div class="layanan">
+            <div class="icon-layanan">
+              <i class="fa-solid fa-print"></i>
+            </div>
+            <div class="deskripsi-layanan">
+              <p>Print</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolorum natus rerum nihil sequi error quidem cum harum, a ab, 
+                assumenda atque ducimus iste voluptates totam blanditiis at. 
+                Cumque eos fuga, doloribus dignissimos 
+                accusantium nisi impedit, veniam itaque mollitia ipsam corporis!
+              </p>
+            </div>
+          </div>
+          <div class="layanan">
+            <div class="icon-layanan">
+              <i class="fa-solid fa-print"></i>
+            </div>
+            <div class="deskripsi-layanan">
+              <p>Print</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Dolorum natus rerum nihil sequi error quidem cum harum, a ab, 
+                assumenda atque ducimus iste voluptates totam blanditiis at. 
+                Cumque eos fuga, doloribus dignissimos 
+                accusantium nisi impedit, veniam itaque mollitia ipsam corporis!
+              </p>
+            </div>
+          </div>
+          
+        </div>
+        
+      </div>
+      
+    </div>
+  </body>
+</html>
